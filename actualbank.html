@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ethereal.com</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<img src= "D:\appdev\etherre=====.png" alt="logo" height=150px width=150px style="float:left">
+<link rel="stylesheet" type="text/css" href="D:\appdev\bankcs.css">
+</head>
+<body>
+<ul style="list-style-type:none">
+<b><li> >Get upto 100% on road funding</li>
+<li> >Get 8% off on flights</li>
+<li>>Get 15% off on domestic hotels</li></b>
+</ul>
+<h1> ETHEREAL BANK</h1>
+<h2>“Good banking is produced not by good laws, but by good bankers.” </h2>
+
+<div class="topnav">
+<button id="show-popup-btn">Login</button>
+<a href="#"> Accountdetails</a>
+<a href="#"> NewAccount</a>
+<a href="#">Checkbalance</a>
+<a href="#">Transactions</a>
+<a href="#">PayEMI</a>
+<a href="#">CustomerService</a>
+</div>
+<div class="popup-overlay">
+<div class="popup-form">
+<h2> LOGIN </h2>
+<form>
+<input type="text  class="form-input" placeholder="Username" id="username">
+<input type="email" class="form-input" placeholder="Email-id" id="email">
+<input type="password" class="form-input" placeholder="Password" id="password">
+<input type="submit" id="submit-btn" placeholder="submit">
+</form>
+</div>
+</div>
+<img src="D:\appdev\spa proj\download.jpg" alt=savings height=500px width=500 px style="float:right">
+<div class="options">
+<div class="div1"><p>Credit Cards</p>
+<img src="D:\appdev\spa proj\creditcard.png" height=100px width=100px ></div>
+<div class="div1"><p>Personal Loan</p>
+<img src="D:\appdev\spa proj\personalloan.jpg" height=100px width=100px></div>
+<div class="div1"><p>Home loan</p>
+<img src="D:\appdev\spa proj\homeloan.png"height=80px width=100px></div>
+<div class="div1"><p>Fixed Deposit Calculator</p>
+<img src="D:\appdev\spa proj\fixeddepocalc.jpg" height=100px width=100px></div>
+<div class="div1"><p>Digital Savings Account</p>
+<img src="D:\appdev\spa proj\savingacc.png" height=100px width=100px></div>
+<div class="div1"><p>Personal Loan EMI Calculator</p>
+<img src="D:\appdev\spa proj\personalcalc.png" height=100px width=100px></div>
+<div class="div1"><p>Home Loan EMI </p>
+<img src="D:\appdev\spa proj\homeloancalc.png" height=100px width=100px></div>
+<div class="div1"><p>Credit Card EMI Calculator</p>
+<img src="D:\appdev\spa proj\creditcardcalc.png" height=100px width=100px></div>
+<div class="div1"><p> NRI Services</p>
+<img src="D:\appdev\spa proj\mutual.png" height=100px width=100px></div>
+</div>
+<hr>
+<footer><hr><h3 style="text-decoration:underline","color:white"><b>About us</b></p>
+<hr>
+<p><b>Contact</b> : 8903-xxxx-xxxx</p>
+<p><b>Email</b> : Etherealbank@yahoo.com</p>
+<p><b>Instagram</b>: Etherealbank</p>
+<p><b>Twitter</b>: Etherealbank</p>
+</footer>
+<script>
+ const showPopupBtn = document.getElementById('show-popup-btn');
+  const popupOverlay = document.querySelector('.popup-overlay');
+
+    showPopupBtn.addEventListener('click', () => {
+      popupOverlay.style.display = 'block';
+    });
+
+    window.addEventListener('click', (event) => {
+      if (event.target === popupOverlay) {
+        popupOverlay.style.display = 'none';
+      }
+    });
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+const username = document.getElementById("username").value;
+const email = document.getElementById("email").value;
+const password = document.getElementById("password").value;
+if (username.length === 0) {
+  
+  alert("Please enter your username");
+  return;
+}
+
+if (!/\S+@\S+\.\S+/.test(email)) {
+  alert("Please enter a valid email address");
+  return;
+}
+
+if (password.length < 8) {
+  alert("Password must be atleast 8 characters");
+  return;
+}
+
+if (/\s/.test(password)) {
+  alert("Password can't contain whitespaces");
+  return;
+}
+
+if (!/[!@#$%^&*-]/.test(password)) {
+  alert("Password must contain at least one special character");
+  return;
+}
+
+if (!/[a-zA-Z]+/.test(password)) {
+  alert("Password must contain alphabets");
+  return;
+}
+event.preventDefault();
+  alert("Form Submitted Successfully!!!");
+  popupOverlay.style.display = "none";
+});s
+
+
+</script>
+</body>
+</html>
