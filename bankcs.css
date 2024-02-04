@@ -1,0 +1,127 @@
+
+h1{
+    color:#228B22;
+    padding:50px;
+    text-shadow:2px 2px 8px #DCDCDC;
+    font-family:OCR A Std, monospace;
+    font-size: 50px;
+}
+h2{ 
+color:#5F9EA0;
+font-family:Stencil Std, fantasy;
+}
+.options{
+  display:grid;
+  grid-template-columns:auto auto auto;
+  column-gap: 10px;
+  background-color: white;
+  border-style: solid;
+  border-width: 20px 20px;
+  border:red;
+  padding: 10px;
+}
+.updates{
+float:right;
+}
+.div1{
+  background-color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  margin:15px;
+  border-radius:25px;
+  border-style:solid;
+border-color:#228B22;
+}
+footer{
+font-size:20px;
+clear:both;
+background-color:#228B22;
+color:white;
+font-family:American Typewriter, serif;
+}
+.topnav{
+background-color:#018749;
+color:white;
+margin:5px;
+padding:15px;
+display:block;
+overflow:auto;
+word-spacing:35px;
+font-family:Impact, fantasy;
+font-size:14px;
+border:white;
+margin-block:35px;
+}
+
+.topnav a:link{
+color:#FFFFFF;
+text-decoration:none;
+}
+.topnav a:visited{
+color:#FFFFFF;
+text-decoration:none;
+}
+.topnav a:hover{
+color:pink;
+text-decoration:none;
+}
+ul{
+float:right;
+border-style:inset;
+border-color:#8cc751;
+border-width:2px;
+font-family:font-variant: small-caps;
+text-align:left;
+font-size:20px;
+padding:14px;
+}
+h4{
+color:red;
+font-family:Marker Felt, fantasy
+}
+ #show-popup-btn {
+      padding: 10px 20px;
+      border-style:none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color:#018749;
+      font-family:Impact, fantasy;
+      color:white;
+      font-size:14px;
+    }
+    .popup-overlay {
+      z-index:999;
+      position: fixed;
+      width:100%;
+      height:100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+      top:0;
+      left:0;
+    }
+    .popup-form {
+      position:absolute;
+      width: 300px;
+      padding:20px;
+      height:200px;
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      top:25%;
+      left:30%;
+    }
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .submit-btn {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
